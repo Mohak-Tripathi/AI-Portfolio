@@ -58,42 +58,42 @@ export default function Home() {
             </h2>
             
             <div className="card-style p-8 md:p-10">
-              <p className="text-base text-foreground-secondary mb-6 leading-relaxed">
+              <p className="text-base font-serif text-foreground-secondary mb-6 leading-relaxed">
                 I'm a dedicated AI engineer who recently completed an intensive AI bootcamp where I 
                 built <span className="text-accent font-semibold">12+ production-ready projects</span>.
                 My journey into artificial intelligence has been driven by curiosity and a desire to 
                 create innovative solutions that make a difference.
               </p>
               
-              <p className="text-base text-foreground-secondary mb-6 leading-relaxed">
+              <p className="text-base font-serif text-foreground-secondary mb-6 leading-relaxed">
                 During the bootcamp, I gained hands-on experience with cutting-edge technologies including 
                 natural language processing, computer vision, deep learning frameworks, and deployment 
                 platforms. Each project pushed me to learn new concepts and apply them in practical scenarios.
               </p>
               
-              <p className="text-base text-foreground-secondary leading-relaxed">
+              <p className="text-base font-serif text-foreground-secondary leading-relaxed">
                 I'm currently seeking opportunities to work on challenging AI projects where I can contribute 
                 my skills and continue growing as an engineer. I believe in writing clean, maintainable code 
                 and building systems that are both powerful and user-friendly.
               </p>
 
               <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">12+</div>
-                  <div className="text-sm text-foreground-secondary">Projects</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">100%</div>
-                  <div className="text-sm text-foreground-secondary">Deployed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">AI/ML</div>
-                  <div className="text-sm text-foreground-secondary">Focus</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-accent mb-2">Python</div>
-                  <div className="text-sm text-foreground-secondary">Primary</div>
-                </div>
+                 <div className="text-center">
+                   <div className="text-3xl font-serif font-bold text-accent mb-2">12+</div>
+                   <div className="text-sm font-serif text-foreground-secondary">Projects</div>
+                 </div>
+                 <div className="text-center">
+                   <div className="text-3xl font-serif font-bold text-accent mb-2">100%</div>
+                   <div className="text-sm font-serif text-foreground-secondary">Deployed</div>
+                 </div>
+                 <div className="text-center">
+                   <div className="text-3xl font-serif font-bold text-accent mb-2">AI/ML</div>
+                   <div className="text-sm font-serif text-foreground-secondary">Focus</div>
+                 </div>
+                 <div className="text-center">
+                   <div className="text-3xl font-serif font-bold text-accent mb-2">Python</div>
+                   <div className="text-sm font-serif text-foreground-secondary">Primary</div>
+                 </div>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Home() {
               My <span className="accent-text">Projects</span>
             </h2>
             
-            <p className="text-base text-foreground-secondary mb-12 text-center max-w-2xl mx-auto">
+            <p className="text-base font-serif text-foreground-secondary mb-12 text-center max-w-2xl mx-auto">
               A collection of AI and machine learning projects built during my bootcamp journey.
               Each project is deployed and live on Streamlit Cloud.
             </p>
@@ -133,7 +133,7 @@ export default function Home() {
               Let's <span className="accent-text">Connect</span>
             </h2>
             
-            <p className="text-base text-foreground-secondary mb-12 max-w-2xl mx-auto">
+            <p className="text-base font-serif text-foreground-secondary mb-12 max-w-2xl mx-auto">
               I'm always open to discussing new opportunities, collaborations, or just chatting 
               about AI and technology. Feel free to reach out!
             </p>
@@ -148,10 +148,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Mail className="text-accent" size={20} />
                   </div>
-                  <div className="text-left">
-                    <div className="text-xs text-foreground-tertiary">Email</div>
-                    <div className="text-sm text-foreground font-medium">your.email@example.com</div>
-                  </div>
+                   <div className="text-left">
+                     <div className="text-xs font-sans text-foreground-tertiary">Email</div>
+                     <div className="text-sm font-serif text-foreground font-medium">your.email@example.com</div>
+                   </div>
                 </a>
 
                 {/* LinkedIn */}
@@ -164,10 +164,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Linkedin className="text-accent" size={20} />
                   </div>
-                  <div className="text-left">
-                    <div className="text-xs text-foreground-tertiary">LinkedIn</div>
-                    <div className="text-sm text-foreground font-medium">@yourusername</div>
-                  </div>
+                   <div className="text-left">
+                     <div className="text-xs font-sans text-foreground-tertiary">LinkedIn</div>
+                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                   </div>
                 </a>
 
                 {/* GitHub */}
@@ -180,10 +180,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Github className="text-accent" size={20} />
                   </div>
-                  <div className="text-left">
-                    <div className="text-xs text-foreground-tertiary">GitHub</div>
-                    <div className="text-sm text-foreground font-medium">@yourusername</div>
-                  </div>
+                   <div className="text-left">
+                     <div className="text-xs font-sans text-foreground-tertiary">GitHub</div>
+                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                   </div>
                 </a>
 
                 {/* Twitter */}
@@ -196,10 +196,10 @@ export default function Home() {
                   <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center">
                     <Twitter className="text-accent" size={20} />
                   </div>
-                  <div className="text-left">
-                    <div className="text-xs text-foreground-tertiary">Twitter</div>
-                    <div className="text-sm text-foreground font-medium">@yourusername</div>
-                  </div>
+                   <div className="text-left">
+                     <div className="text-xs font-sans text-foreground-tertiary">Twitter</div>
+                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                   </div>
                 </a>
               </div>
             </div>

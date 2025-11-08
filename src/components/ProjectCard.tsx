@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="card-style card-hover group">
+    <div className="card-style group transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
       {/* Project Image */}
       <div className="relative h-48 w-full overflow-hidden rounded-t-lg bg-background-elevated">
         <Image
