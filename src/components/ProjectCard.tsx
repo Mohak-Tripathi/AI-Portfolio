@@ -8,25 +8,25 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="glass-effect rounded-xl overflow-hidden card-hover group">
+    <div className="card-style card-hover group">
       {/* Project Image */}
-      <div className="relative h-48 w-full overflow-hidden bg-background-secondary">
+      <div className="relative h-48 w-full overflow-hidden rounded-t-lg bg-background-elevated">
         <Image
           src={project.image}
           alt={project.title}
           fill
-          className="object-cover transition-transform duration-300 group-hover:scale-110"
+          className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
 
       {/* Project Content */}
       <div className="p-6">
-        <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-accent-cyan transition-colors">
+        <h3 className="text-xl font-serif font-semibold text-foreground mb-3 group-hover:text-accent transition-colors">
           {project.title}
         </h3>
 
-        <p className="text-foreground-secondary text-sm mb-4 line-clamp-3">
+        <p className="text-sm font-serif text-foreground-secondary mb-4 line-clamp-3">
           {project.description}
         </p>
 
@@ -35,7 +35,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.technologies.map((tech) => (
             <span
               key={tech}
-              className="px-3 py-1 text-xs bg-accent-cyan/10 text-accent-cyan rounded-full border border-accent-cyan/20"
+              className="px-3 py-1 text-xs font-sans text-foreground-tertiary border border-border rounded-md"
             >
               {tech}
             </span>
@@ -47,16 +47,15 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           href={project.liveUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-4 py-2 bg-accent-cyan hover:bg-accent-blue text-background font-medium rounded-lg transition-all duration-200 group/button"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-hover text-white text-sm font-medium rounded-md transition-colors duration-200"
         >
           View Project
           <ExternalLink
-            size={16}
-            className="transition-transform group-hover/button:translate-x-1"
+            size={14}
+            className="transition-transform group-hover:translate-x-1"
           />
         </a>
       </div>
     </div>
   );
 }
-

@@ -27,7 +27,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-background-secondary border-t border-foreground-secondary/10 py-12">
+    <footer className="bg-background-elevated border-t border-border py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center gap-6">
           {/* Social Links */}
@@ -40,17 +40,17 @@ export default function Footer() {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-foreground-secondary hover:text-accent-cyan transition-colors duration-200"
+                  className="text-foreground-secondary hover:text-accent transition-colors duration-200"
                   aria-label={link.name}
                 >
-                  <Icon size={24} />
+                  <Icon size={20} />
                 </a>
               );
             })}
           </div>
 
           {/* Copyright */}
-          <div className="text-foreground-secondary text-sm text-center">
+          <div className="text-foreground-tertiary text-sm text-center">
             <p>© {currentYear} Mohak. All rights reserved.</p>
             <p className="mt-2">Built with Next.js & Tailwind CSS</p>
           </div>
@@ -59,4 +59,3 @@ export default function Footer() {
     </footer>
   );
 }
-

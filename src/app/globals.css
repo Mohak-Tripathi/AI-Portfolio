@@ -4,25 +4,29 @@
 
 @layer base {
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-serif;
   }
   
   html {
     scroll-behavior: smooth;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
 }
 
 @layer utilities {
-  .gradient-text {
-    @apply bg-gradient-to-r from-accent-cyan via-accent-blue to-accent-purple bg-clip-text text-transparent;
+  .accent-text {
+    @apply text-accent;
+  }
+  
+  .card-style {
+    @apply bg-background-card border border-border rounded-lg transition-all duration-300;
   }
   
   .card-hover {
-    @apply transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-accent-cyan/20;
-  }
-  
-  .glass-effect {
-    @apply bg-background-secondary/50 backdrop-blur-lg border border-foreground-secondary/10;
+    @apply hover:border-border-hover hover:shadow-md;
   }
 }
 
