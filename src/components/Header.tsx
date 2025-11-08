@@ -22,13 +22,13 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 glass-effect border-b border-foreground-secondary/10">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-2xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            className="text-xl font-serif font-semibold text-foreground hover:text-accent transition-colors"
           >
             Mohak
           </button>
@@ -39,7 +39,7 @@ export default function Header() {
               <button
                 key={link.id}
                 onClick={() => scrollToSection(link.id)}
-                className="text-foreground hover:text-accent-cyan transition-colors duration-200"
+                className="text-sm font-sans text-foreground-secondary hover:text-accent transition-colors duration-200"
               >
                 {link.name}
               </button>
@@ -49,7 +49,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-foreground hover:text-accent-cyan transition-colors"
+            className="md:hidden text-foreground hover:text-accent transition-colors"
             aria-label="Toggle menu"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -64,7 +64,7 @@ export default function Header() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="text-foreground hover:text-accent-cyan transition-colors duration-200 text-left"
+                  className="text-foreground-secondary hover:text-foreground transition-colors duration-200 text-left"
                 >
                   {link.name}
                 </button>
@@ -76,4 +76,3 @@ export default function Header() {
     </header>
   );
 }
-
