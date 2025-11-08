@@ -1,0 +1,16 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#1e293b"/>
+  <rect x="50" y="50" width="700" height="500" fill="url(#grad)" opacity="0.1" rx="20"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="48" fill="#e2e8f0" text-anchor="middle" font-weight="bold">AI Project</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1" text-anchor="middle">Add your project screenshot here</text>
+  <circle cx="400" cy="200" r="60" fill="url(#grad)" opacity="0.3"/>
+  <path d="M 370 200 L 390 220 L 430 180" stroke="#06b6d4" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
