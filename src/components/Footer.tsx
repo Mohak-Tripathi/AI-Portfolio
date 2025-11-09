@@ -7,12 +7,12 @@ export default function Footer() {
     {
       name: "GitHub",
       icon: Github,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/Mohak-Tripathi",
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/mohak-tripathi",
     },
     {
       name: "Twitter",
@@ -22,7 +22,7 @@ export default function Footer() {
     {
       name: "Email",
       icon: Mail,
-      url: "mailto:your.email@example.com",
+      url: "mohaktripathi029@gmail.com",
     },
   ];
 
