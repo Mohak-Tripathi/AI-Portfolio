@@ -24,14 +24,22 @@ export default function Home() {
               Hi, I'm <span className="accent-text">Mohak</span>
             </h1>
             
-            <p className="text-xl md:text-2xl font-serif text-foreground-secondary mb-8 max-w-2xl mx-auto">
+            {/* <p className="text-xl md:text-2xl font-serif text-foreground-secondary mb-8 max-w-2xl mx-auto">
               AI Engineer & Machine Learning Enthusiast
             </p>
             
             <p className="text-base font-serif text-foreground-secondary mb-12 max-w-3xl mx-auto">
               Passionate about building intelligent systems that solve real-world problems.
               Specialized in NLP, Computer Vision, and Deep Learning.
-            </p>
+            </p> */}
+            <p className="text-xl md:text-2xl font-serif text-foreground-secondary mb-8 max-w-2xl mx-auto">
+  Full-Stack Engineer • Agentic AI Developer
+</p>
+
+<p className="text-base font-serif text-foreground-secondary mb-12 max-w-3xl mx-auto">
+  Builds SaaS & agentic AI. Specialties: Next.js/React • Node.js/GraphQL • Python (LangChain/LangGraph/CrewAI) • FastAPI/RAG
+</p>
+
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
@@ -51,7 +59,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 px-4 bg-background-elevated border-y border-border">
+        {/* <section id="about" className="py-20 px-4 bg-background-elevated border-y border-border">
           <div className="container mx-auto max-w-4xl">
             <h2 className="text-4xl font-serif font-bold mb-8 text-center">
               About <span className="accent-text">Me</span>
@@ -97,7 +105,71 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+
+        {/* About Section */}
+<section id="about" className="py-20 px-4 bg-background-elevated border-y border-border">
+  <div className="container mx-auto max-w-4xl">
+    <h2 className="text-4xl font-serif font-bold mb-8 text-center">
+      About <span className="accent-text">Me</span>
+    </h2>
+    
+    <div className="card-style p-8 md:p-10">
+      <p className="text-base font-serif text-foreground-secondary mb-6 leading-relaxed">
+        I’m a full-stack engineer who loves building real, usable products end-to-end — from a clean 
+        front-end interface to a scalable backend, all the way through deployment. Over the last few 
+        years, I’ve worked across SaaS platforms, multi-tenant architectures, payment systems, and 
+        data-heavy IoT solutions, shipping features that directly impact users and businesses.
+      </p>
+      
+      <p className="text-base font-serif text-foreground-secondary mb-6 leading-relaxed">
+        Recently, I completed an intensive Agentic AI bootcamp where I built 
+        <span className="text-accent font-semibold"> 12+ production-ready AI applications</span> using 
+        <span className="text-accent font-semibold">  LangChain, LangGraph, CrewAI, FastAPI, and LLM tool-use patterns </span>. That journey deepened my 
+        understanding of autonomous agents, memory architectures, RAG pipelines, and how to build AI 
+        systems that behave reliably in real-world scenarios.
+      </p>
+      
+      <p className="text-base font-serif text-foreground-secondary mb-6 leading-relaxed">
+        Alongside my AI work, I’ve built full-stack projects like LiftUP, a gym-management SaaS 
+        platform with trainer/member management, payments, attendance tracking, and multi-tenant 
+        support. I enjoy designing scalable systems, clean database schemas, class-based service 
+        layers, and containerised deployments that are easy to maintain and extend.
+      </p>
+
+      <p className="text-base font-serif text-foreground-secondary leading-relaxed">
+        At my core, I’m someone who learns fast, ships fast, and cares about building products that 
+        solve real problems. Whether it’s an AI agent, a SaaS platform, or an internal automation 
+        tool, I enjoy the entire lifecycle — understanding user needs, designing the architecture, 
+        writing clean code, and deploying a polished product. I’m now looking for opportunities where 
+        I can apply both my full-stack engineering background and my agentic AI skills to build 
+        meaningful, high-impact systems.
+      </p>
+
+      <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="text-center">
+          <div className="text-3xl font-serif font-bold text-accent mb-2">12+</div>
+          <div className="text-sm font-serif text-foreground-secondary">AI Projects</div>
+        </div>
+        <div className="text-center">
+          <div className="text-3xl font-serif font-bold text-accent mb-2">100%</div>
+          <div className="text-sm font-serif text-foreground-secondary">Deployed</div>
+        </div>
+        <div className="text-center">
+          <div className="text-3xl font-serif font-bold text-accent mb-2">Agentic</div>
+          <div className="text-sm font-serif text-foreground-secondary">AI Focus</div>
+        </div>
+        <div className="text-center">
+          <div className="text-3xl font-serif font-bold text-accent mb-2">Full-Stack</div>
+          <div className="text-sm font-serif text-foreground-secondary">Engineering</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         {/* Projects Section */}
         <section id="projects" className="py-20 px-4">
@@ -111,12 +183,12 @@ export default function Home() {
               Each project is deployed and live on Streamlit Cloud.
             </p>
 
-            {/* 3-column grid - original layout */}
+            {/* 3-column grid layout */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  className="animate-slide-up"
+                  className="animate-slide-up h-full"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <ProjectCard project={project} />
@@ -150,13 +222,13 @@ export default function Home() {
                   </div>
                    <div className="text-left">
                      <div className="text-xs font-sans text-foreground-tertiary">Email</div>
-                     <div className="text-sm font-serif text-foreground font-medium">your.email@example.com</div>
+                     <div className="text-sm font-serif text-foreground font-medium">mohaktripathi029@gmail.com</div>
                    </div>
                 </a>
 
                 {/* LinkedIn */}
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/mohak-tripathi/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 border border-border hover:border-border-hover rounded-lg transition-all duration-200"
@@ -166,13 +238,13 @@ export default function Home() {
                   </div>
                    <div className="text-left">
                      <div className="text-xs font-sans text-foreground-tertiary">LinkedIn</div>
-                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                     <div className="text-sm font-serif text-foreground font-medium">@mohak-tripathi</div>
                    </div>
                 </a>
 
                 {/* GitHub */}
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/Mohak-Tripathi"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 border border-border hover:border-border-hover rounded-lg transition-all duration-200"
@@ -182,7 +254,7 @@ export default function Home() {
                   </div>
                    <div className="text-left">
                      <div className="text-xs font-sans text-foreground-tertiary">GitHub</div>
-                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                     <div className="text-sm font-serif text-foreground font-medium">@Mohak-Tripathi</div>
                    </div>
                 </a>
 
@@ -198,7 +270,7 @@ export default function Home() {
                   </div>
                    <div className="text-left">
                      <div className="text-xs font-sans text-foreground-tertiary">Twitter</div>
-                     <div className="text-sm font-serif text-foreground font-medium">@yourusername</div>
+                     <div className="text-sm font-serif text-foreground font-medium">-</div>
                    </div>
                 </a>
               </div>
